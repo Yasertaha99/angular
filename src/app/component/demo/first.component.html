@@ -1,0 +1,53 @@
+<!-- <div style="border: 1px solid black;">
+    <h1>First Component</h1>
+    <app-second></app-second>
+</div> -->
+
+
+<!-- <app-first></app-first> -->
+
+
+
+<!-- <h1>First Component</h1> -->
+
+
+
+<!-- HTML, TS -->
+<!-- <p>4+4</p> -->
+<!-- Interpolition -->
+ <!-- <p>{{4+4}}</p> -->
+ <p>UserName: {{name}}</p>
+ <input type="text" value="{{name}}" />
+
+ <!-- One Way Binding [From TS to HTML] -->
+ <!-- <input type="text" class="inp" [value]="name" /> -->
+ <input type="text" [class]="varClass" [value]="name" />
+
+ <!-- Event Binding -->
+  <input (click)="chgName()" type="button" value="Change Name" />  
+
+
+  <!-- Images -->
+   <img src="https://images.unsplash.com/photo-1725261353746-fdb0052adc46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"/>
+   <img src="/Images/1.jpg"/>
+   <img (mouseout)="chgPic2()" (mouseover)="chgPic1()" [src]="imgSrc"/>
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<!-- Two Way Binding [From HTML to TS==>From TS to HTML ] -->
+ <!-- 1)By US -->
+<input type="text" (input)="getData($event)" placeholder="Enter First Name">
+<p>First Name: {{fName}}</p>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+ <!-- 2)By Angualr [value-input] -->
+<input type="text" [(ngModel)]="lName" placeholder="Enter Last Name">
+<p>Last Name: {{lName}}</p>
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<input type="text" [(ngModel)]="salary" placeholder="Enter Last Name">
+<p>Salary: {{salary}}</p>
+
+
+
+
+
