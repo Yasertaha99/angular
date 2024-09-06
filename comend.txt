@@ -4,4 +4,14 @@
  then copy relative path for css and js bootstrap from folder node_modules
  then go to file named angular.json add path cdd in styles array 
  and in scripts array add path javascript  
- 
+
+
+
+
+run     ng g c Students --skip-tests --inline-style
+run     ng g c Register --skip-tests --inline-style
+
+this create two  components without tests and css files
+  then join the two components with app component 
+  go to ts app and add two my components in imports array
+and go to app  html file add components selectors to it 
