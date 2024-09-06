@@ -18,7 +18,7 @@ export class RegisterComponent {
  @Output() myEvent=new EventEmitter();
  //fire event
    fireNew(){
-    this.myEvent.emit({name:this.name, age:+this.age})
+    this.myEvent.emit({name:this.name, age: +this.age})
 
 }
 

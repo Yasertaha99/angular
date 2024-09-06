@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { students } from '../../../Types/students.type';
 
 @Component({
   selector: 'app-students',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
   templateUrl: './students.component.html',
   styles: ``
 })
-export class StudentsComponent {
 
+export class StudentsComponent {
+  
+  @Input() Students:students=[];
+  // console.log(Students);
 }

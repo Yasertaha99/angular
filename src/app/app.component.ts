@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { StudentsComponent } from './components/day3/students/students.component';
 import { RegisterComponent } from './components/day3/register/register.component';
+import { students } from './Types/students.type';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,9 @@ import { RegisterComponent } from './components/day3/register/register.component
 })
 export class AppComponent {
   // title = 'tasks';
-  Getdata(data:Event){
-    console.log(data);
+  Students:students=[];
+  Getdata(data:any){
+    // console.log(data);
+    this.Students.push(data);
   }
 }
