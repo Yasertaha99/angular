@@ -1,0 +1,7 @@
+ run    ng new <project name >
+ run    cd project name
+ run    npm i bootstrap 
+ then copy relative path for css and js bootstrap from folder node_modules
+ then go to file named angular.json add path cdd in styles array 
+ and in scripts array add path javascript  
+ 
