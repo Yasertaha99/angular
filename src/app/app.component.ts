@@ -11,5 +11,8 @@ import { RegisterComponent } from './components/day3/register/register.component
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'tasks';
+  // title = 'tasks';
+  Getdata(data:Event){
+    console.log(data);
+  }
 }
