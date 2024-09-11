@@ -1,1 +1,26 @@
-<p>students works!</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <p class="alert alert-dark text-center">Rregester</p>
+                <div class="form-row">
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-3 col-form-label text-center">Email</label>
+                        <div class="col-sm-9">
+                          <input [(ngModel)]="email" type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                      </div>
+                     <div class="col d-flex">
+                    <label for="full name" class="col-sm-2 col-form-label w-25 text-center">Full Name:</label>
+                    <input [(ngModel)]="name" type="text" class="form-control w-75"  id="full name" placeholder="full name">
+                  </div>
+                  <div class="col d-flex">
+                    <label for="age" class="col-sm-2 col-form-label w-25 text-center">Age:</label>
+                    <input [(ngModel)]="age" type="number" class="form-control w-75" id="age" placeholder="Your age ">
+                  </div>
+                  <div class="col-auto text-center m-4">
+                    <button type="submit" (click)="sendData()" class="btn btn-outline-success mb-2">Add</button>
+                  </div>
+                </div>
+        </div>
+    </div>
+</div>

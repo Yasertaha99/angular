@@ -1,0 +1,7 @@
+.active{
+    background-color: aqua;
+    border-radius: 10px;
+    outline-style: dashed;
+    margin-left: 14px;
+    padding: 7px;
+}
