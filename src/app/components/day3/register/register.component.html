@@ -9,7 +9,16 @@
                 </div>
                 <div class="form-group d-flex m-auto mb-2">
                     <label for="age" class="w-25">age</label>
-                    <input [(ngModel)]="age"  type="number" class="form-control" id="age" require="more than 18"/>
+                    <input [(ngModel)]="age"  type="number" class="form-control" hamd id="age" require="more than 18"/>
+                    @if(age&&+age>=18){
+                    <div style="color: green;">
+                        age is valaid
+                    </div>
+                    }@else if(age&&+age<18){
+                        <div style="color: rgb(128, 0, 0);">
+                            age must be more than 18 
+                        </div>
+                    }
                 </div>
                 <div class="form-group text-center m-atuo mb-4">
                     <input  type="button" (click)="fireNew()" value="add" class="btn btn-outline-dark" />

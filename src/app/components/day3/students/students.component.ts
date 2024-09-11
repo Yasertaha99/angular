@@ -11,6 +11,7 @@ import { students } from '../../../Types/students.type';
 
 export class StudentsComponent {
   
+  
   @Input() Students:students=[];
   // console.log(Students);
 }
