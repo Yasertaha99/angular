@@ -18,7 +18,11 @@ export class RegisterComponent {
  @Output() myEvent=new EventEmitter();
  //fire event
    fireNew(){
-    this.myEvent.emit({name:this.name, age: +this.age})
+    if (this.age && +this.age >= 18){
+      this.myEvent.emit({name:this.name, age: +this.age})
+     this.name="";
+     this.age="";
+    }
 
 }
 
