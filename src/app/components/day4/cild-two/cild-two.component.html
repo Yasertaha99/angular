@@ -1,0 +1,25 @@
+<div class="container">
+<div class="row">
+    <p class="alert alert-dark text-center f-100"> students</p>
+<table class="table table-hover text-center">
+    <thead>
+      <tr>
+        <th scope="col">NO</th>
+        <th scope="col">full Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (Std of students; track $index) {
+        <tr >
+          <th scope="row">{{$index+1}}</th>
+          <td>{{Std.name}}</td>
+          <td>{{Std.email}}</td>
+          <td>{{Std.age}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
+</div>
