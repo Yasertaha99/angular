@@ -5,11 +5,15 @@ import { RegisterComponent } from './components/day3/register/register.component
 import { students } from './Types/students.type';
 import { CildOneComponent } from './components/day4/cild-one/cild-one.component';
 import { CildTwoComponent } from './components/day4/cild-two/cild-two.component';
+import { HeaderComponent } from "./components/route/header/header.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,StudentsComponent,RegisterComponent,CildOneComponent,CildTwoComponent],
+  imports: [RouterOutlet, StudentsComponent, RegisterComponent, 
+    CildOneComponent, CildTwoComponent, HeaderComponent
+  ,HeaderComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
